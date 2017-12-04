@@ -1,0 +1,31 @@
+Feature: Assignment 08, Radon Level Analysis - Output File Creation
+
+    Scenario: The changes from your current session are saved to the output file.
+    	Given that I'm using "data1.txt" as my load file and "out.txt" as my save file
+		Given that I demolish existent house number "1425"
+		And build an infill at valid location "1417" with basement volumes "202" and "194"
+		Then what should happen is the program should run
+		And I should find the output file is named correctly and contains exactly these contents
+			"""
+			1405
+			484.0
+			0.00092
+			1409
+			483.0
+			0.00329
+			1413
+			176.0
+			0.01107
+			1417
+			202.0
+			0.00745
+			1419
+			194.0
+			0.00745
+			1421
+			408.0
+			0.00384
+			1429
+			480.0
+			0.00492
+			"""
