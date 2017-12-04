@@ -24,8 +24,8 @@ mkdir style_results
 javac -d bin -cp "bin;." solution/*.java
 javac -d bin -cp "jars/*;bin;." step_definitions/*.java
 
-copy solution\data1.txt bin
-copy solution\data2.txt bin
+:: copy solution\data1.txt bin
+:: copy solution\data2.txt bin
 
 java -cp "jars/*;bin;" cucumber.api.cli.Main -p html:feature_results --snippets camelcase -g step_definitions features
 
