@@ -9,9 +9,9 @@ cp "${SCRIPT_PATH}/global.json" ~/.sonarlint/conf
 # clean up old runs
 rm -rf "${SCRIPT_PATH}/feature_results"
 rm -rf "${SCRIPT_PATH}/style_results"
-rm -rf "${SCRIPT_PATH}/bin"
+# rm -rf "${SCRIPT_PATH}/bin"
 
-mkdir "${SCRIPT_PATH}/bin"
+# mkdir "${SCRIPT_PATH}/bin"
 javac -d "${SCRIPT_PATH}/bin" "${SCRIPT_PATH}/solution"/*.java
 javac -d "${SCRIPT_PATH}/bin" -cp "${SCRIPT_PATH}/jars/*:${SCRIPT_PATH}/bin" "${SCRIPT_PATH}/step_definitions"/*.java
 
