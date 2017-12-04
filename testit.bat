@@ -17,11 +17,15 @@ rmdir feature_results /s /q
 rmdir style_results /s /q
 mkdir style_results
 
-rmdir bin /s /q
-mkdir bin
+:: rmdir bin /s /q
+:: mkdir bin
+
 
 javac -d bin -cp "bin;." solution/*.java
 javac -d bin -cp "jars/*;bin;." step_definitions/*.java
+
+copy solution\data1.txt bin
+copy solution\data2.txt bin
 
 java -cp "jars/*;bin;" cucumber.api.cli.Main -p html:feature_results --snippets camelcase -g step_definitions features
 
