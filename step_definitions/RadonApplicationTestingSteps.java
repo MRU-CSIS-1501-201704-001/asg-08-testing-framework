@@ -388,7 +388,7 @@ public class RadonApplicationTestingSteps {
 
     private String fullFilePath(String fileName) {
         final String dir = System.getProperty("user.dir");
-        String fileLoc = dir + "\\solution\\" + fileName;
+        String fileLoc = dir + "\\bin\\" + fileName;
         return fileLoc.replaceAll("\\\\","/");
     }
 
