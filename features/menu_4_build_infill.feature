@@ -116,7 +116,7 @@ Scenario: Build an Infill - Lot is before current first house
 			1425 Rue Marie Curie
 			1429 Rue Marie Curie
 			1433 Rue Marie Curie
-			1435 Rue Marie Curies
+			1435 Rue Marie Curie
 			"""
 		And the program should print the menu again
 		And the program should request my choice again
